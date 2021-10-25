@@ -1,0 +1,9 @@
+{
+	"type":"dialogue",
+	"art":"car",
+	"item":"",
+	"prompt":"Upon handing the man your money, he hands you the keys and departs.",
+	"options":[
+		{"display":"Press enter.", "input":"*", "dialogue":{"type":"swap","to":"car"}}
+	]
+}

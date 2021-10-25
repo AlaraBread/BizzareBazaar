@@ -1,0 +1,9 @@
+{
+	"type":"if",
+	"options":[
+		{"flag":"grandma_hat","dialogue":{"type":"swap","to":"grandma/grandma3"}},
+		{"flag":"grandma_cheese", "dialogue":{"type":"swap", "to":"grandma/grandma2"}},
+		{"flag":"grandma_met", "dialogue":{"type":"swap","to":"grandma/grandma1"}},
+		{"flag":"*", "dialogue":{"type":"swap", "to":"grandma/grandma_intro"}}
+	]
+}

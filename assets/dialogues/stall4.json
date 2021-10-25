@@ -1,0 +1,17 @@
+{
+	"type":"if",
+	"options":[
+		{"flag":"woman_met","dialogue":{
+			"type":"swap","to":"woman/woman"
+		}},
+		{"flag":"bees_gone","dialogue":{
+			"type":"swap","to":"woman/woman_intro"
+		}},
+		{"flag":"bees_met", "dialogue":{
+			"type":"swap","to":"bees/bees1"
+		}},
+		{"flag":"*", "dialogue":{
+			"type":"swap","to":"bees/bees_intro"
+		}}
+	]
+}

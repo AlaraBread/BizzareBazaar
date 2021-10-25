@@ -1,0 +1,139 @@
+{
+	"type":"dialogue",
+	"music":2,
+	"art":"woman",
+	"flag":"woman_met",
+	"prompt":"\"Oh. Hi. Nice to meet you.\"",
+	"options":[
+		{"display":"[1] \"The feeling is mutual.\"", "input":"1", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"So, what brings you here?\"",
+			"options":[
+				{"display":"[1] \"Looking for a SYTOLIC MOTIVATOR.\"", "input":"1", "dialogue":{
+					"type":"dialogue",
+					"prompt":"\"I don’t know what that is, but I hope you find it!\"",
+					"options":[
+						{"display":"[1] \"Thanks.\"", "input":"1", "dialogue":{
+							"type":"return", "levels":1
+						}},
+						{"display":"[2] \"Useless.\"", "input":"2", "dialogue":{
+							"type":"dialogue",
+							"prompt":":(",
+							"options":[
+								{"display":"Press enter", "input":"*", "dialogue":{
+									"type":"return","levels":2
+								}}
+							]
+						}}
+					]
+				}},
+				{"display":"[2] \"Just perusing the market.\"", "input":"2", "dialogue":{
+					"type":"dialogue",
+					"prompt":"\"Oh, me too. I saw a nice smiling man in a suit selling some interesting items.\"",
+					"options":[
+						{"display":"[1] \"That’s nice.\"", "input":"1","dialogue":{
+							"type":"return", "levels":1
+						}},
+						{"display":"[2] \"Uh oh.\"", "input":"2", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Uh oh?\"",
+							"options":[
+								{"display":"[1] \"That man in a suit isn’t as nice as he seems. He ripped me off.\"", "input":"1", "dialogue":{
+									"type":"dialogue",
+									"prompt":"\"Oh no! I thought he looked so trust-worthy.\"",
+									"options":[
+										{"display":"[1] \"Yeah, me too. Now I got a broken-down car he sold me as new.\"", "input":"1", "dialogue":{
+											"type":"dialogue",
+											"prompt":"\"That’s awful! Thanks for warning me, now I won’t give that man a cent!\"",
+											"options":[
+												{"display":"Press enter", "input":"*", "dialogue":{
+													"type":"return", "levels":4, "flag":"hustle_ending"
+												}}
+											]
+										}},
+										{"display":"[2] \"Wow, you fool.\"", "input":"2", "dialogue":{
+											"type":"dialogue",
+											"prompt":":(",
+											"options":[
+												{"display":"Press enter", "input":"*", "dialogue":{
+													"type":"return", "levels":4
+												}}
+											]
+										}}
+									]
+								}}
+							]
+						}}
+					]
+				}},
+				{"display":"[3] \"I’m peddling stuff. Here, LOOK.\" [show ITEM]", "input":"3", "dialogue":{
+					"type":"if",
+					"options":[
+						{"item":"FLOWERS", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh! What nice FLOWERS! Here, I have some PERFUME I can offer you if you would so kindly give me them.\"",
+							"options":[
+								{"display":"[1] \"Sure thing.\"","input":"1","dialogue":{
+									"type":"dialogue",
+									"prompt":"You have traded your FLOWERS for some delicate-smelling PERFUME. Oooh, feminine~",
+									"item":"PERFUME",
+									"options":[
+										{"display":"Press enter", "input":"*", "dialogue":{
+											"type":"return","levels":3
+										}}
+									]
+								}},
+								{"display":"[2] \"No.\"","input":"2","dialogue":{
+									"type":"return","levels":2
+								}}
+							]
+						}},
+						{"item":"OMINOUS PLUSH", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"NO WAY! Is that… CHUNKY CHEESE?? I love CHUNKY CHEESE! What do you want for it? I need to have it!\"",
+							"options":[
+								{"display":"[1] \"Ma’am, this dark entity should be destroyed, not proliferated like arms.\"", "input":"1", "dialogue":{
+									"type":"dialogue",
+									"prompt":"\"...what?\"",
+									"options":[
+										{"display":"Press enter", "input":"*", "dialogue":{
+											"type":"return", "levels":3
+										}}
+									]
+								}},
+								{"display":"[2] \"You recognize the value of this plush. I’m going to need something worthy.\"", "input":"2", "dialogue":{
+									"type":"dialogue",
+									"prompt":"\"Hm. You know, I do have this nifty book I paid an arm and a leg for. Some guy here sold it to me. He said it’s going to help me navigate this fair. It’s full of business advice.\"",
+									"options":[
+										{"display":"[1] \"I could use some business advice. It’s a deal.\"", "input":"1", "dialogue":{
+											"type":"dialogue",
+											"prompt":"\"There we go! Thanks so much.\"\nThe book is thick and written on the cover is \"THE SCIENCE OF DEAL-MAKING\" next to a photo of an author who looks kind of like a tool. You have exchanged the OMINOUS PLUSH for the SCAM BOOK.",
+											"item":"SCAM BOOK",
+											"options":[
+												{"display":"Press enter", "input":"*", "dialogue":{
+													"type":"return", "levels":4
+												}}
+											]
+										}}
+									]
+								}}
+							]
+						}},
+						{"item":"*", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Ohhhh, I’m not really interested...\"",
+							"options":[
+								{"display":"[1] \"...sorry.\"", "input":"1", "dialogue":{
+									"type":"return", "levels":2
+								}}
+							]
+						}}
+					]
+				}},
+				{"display":"[5] \"Nothing much, just leaving.\" [LEAVE]", "input":"5", "dialogue":{
+					"type":"swap", "to":"stalls"
+				}}
+			]
+		}}
+	]
+}

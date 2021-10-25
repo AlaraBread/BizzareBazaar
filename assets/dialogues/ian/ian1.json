@@ -1,0 +1,83 @@
+{
+	"type":"dialogue",
+	"music":4,
+	"prompt":"\"Ello, I’m Ian.\" He raises his hand to shake yours, smiling all the while. \"This here’s my stall.\"",
+	"art":"ian",
+	"flag":"ian_met",
+	"options":[
+		{"display":"[1] What are you offering?", "input":"1", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"Oh just junk really. Valuable junk, I mean. Valuable junk you should purchase.\"",
+			"options":[
+				{"display":"[1] I’m all out of money.", "input":"1", "dialogue":{
+					"type":"if",
+					"options":[
+						{"item":"SWEATER","dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh I feel that. It’s a hard life, being unemployed. I tell you, it’s so bleeding cold at home, I can hardly stand it. But I’m sorry, I’m in no position to be giving handouts.\"",
+							"options":[
+								{"display":"[1] Damn. We’re losers.", "input":"1", "dialogue":{
+									"type":"return", "levels":3
+								}},
+								{"display":"[2] You know, those cold nights could be better with one of these... [show SWEATER]", "input":"2", "dialogue":{
+									"type":"dialogue",
+									"prompt":"\"Holy shit, is that a sweater?\"",
+									"options":[
+										{"display":"[1] Handmade. From a grandma.", "input":"1", "dialogue":{
+											"type":"dialogue",
+											"prompt":"\"Ohhhhh alright fine. Here-\" The Englishman rummages through his pile of instruments. \"Take this recorder.\"",
+											"options":[
+												{"display":"[1] Take it.", "input":"1", "dialogue":{
+													"type":"dialogue",
+													"prompt":"He pulls out and hands to you a dinky-looking recorder.\nHardly ideal, but you’ll take what you can get.\nYou trade the SWEATER for a RECORDER",
+													"item":"RECORDER",
+													"flag":"ian_sweater",
+													"options":[
+														{"display":"[1] Thanks!", "input":"1", "dialogue":{
+															"type":"return", "levels":5
+														}}
+													]
+												}}
+											]
+										}}
+									]
+								}}
+							]
+						}},
+						{"item":"*","dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh I feel that. It’s a hard life, being unemployed. I tell you, it’s so bleeding cold at home, I can hardly stand it. But I’m sorry, I’m in no position to be giving handouts.\"",
+							"options":[
+								{"display":"[1] Damn. We’re losers.", "input":"1", "dialogue":{
+									"type":"return", "levels":2
+								}}
+							]
+						}}
+					]
+				}},
+				{"display":"[2] Do you have a systolic motivator?", "input":"2", "dialogue":{
+					"type":"dialogue",
+					"prompt":"\"Of course I do. It’s right next to my crown and my royal scepter. Those things are worth a pretty penny. If I did have one, I wouldn’t have to be here selling my stuff.\"",
+					"flag":"systolic_info",
+					"options":[
+						{"display":"[1] Okay", "input":"1", "dialogue":{
+							"type":"return", "levels":1
+						}}
+					]
+				}},
+				{"display":"[3] How about buying some of MY junk?", "input":"3", "dialogue":{
+					"type":"dialogue",
+					"prompt":"Oi you bleeding twat, you’re really going to come up to a stand and try to sell THEM stuff? I’m looking to make money here, not lose it. Not that I have money to spend anyways.",
+					"options":[
+						{"display":"[1] Okay", "input":"1", "dialogue":{
+							"type":"return", "levels":1
+						}}
+					]
+				}},
+				{"display":"[4] Leave", "input":"4", "dialogue":{
+					"type":"swap", "to":"stalls"
+				}}
+			]
+		}}
+	]
+}

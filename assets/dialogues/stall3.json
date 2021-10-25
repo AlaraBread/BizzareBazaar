@@ -1,0 +1,11 @@
+{
+	"type":"if",
+	"options":[
+		{"flag":"merch_met","dialogue":{
+			"type":"swap","to":"sus_merch/sus_merch"
+		}},
+ 		{"flag":"*","dialogue":{
+			"type":"swap","to":"sus_merch/sus_merch_intro"
+		}}
+	]
+}

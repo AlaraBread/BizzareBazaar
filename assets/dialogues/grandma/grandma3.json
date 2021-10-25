@@ -1,0 +1,47 @@
+{
+	"type":"dialogue",
+	"prompt":"You saunter back on over to the first stall.\nBabushka is stirring a steaming pot of soup. The smell is… divine.\nThe comfort of your childhood home swells within you.\n\"Oh bozhe moi! The hunger on your face, I can see it. When was the last you had grandma’s cooking?\"",
+	"music":3,
+	"art":"grandma",
+	"options":[
+		{"display":"[1] \"that does look good...\"", "input":"1", "dialogue":{
+			"type":"dialogue",
+			"prompt":"Oh, but first, show me what you have brought.",
+			"options":[
+				{"display":"[1] \"I don’t think I have anything you’d like...\"", "input":"1", "dialogue":{
+					"type":"if",
+					"options":[
+						{"item":"NESTING DOLLS", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh, nesting dolls! I love these. Here, you’ve earned your soup.\"\nBabushka has exchanged your NESTING DOLLS for her WARM SOUP. The smell is so good, you want to eat it right now, but then you’d have nothing left to trade!\"",
+							"item":"WARM SOUP",
+							"options":[
+								{"display":"Press enter", "input":"*", "dialogue":{
+									"type":"return", "levels":3
+								}}
+							]
+						}},
+						{"item":"*", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Come back here when you have a gift for babushka!\"",
+							"options":[
+								{"display":"Press enter", "input":"*", "dialogue":{
+									"type":"return", "levels":3
+								}}
+							]
+						}}
+					]
+				}}
+			]
+		}},
+		{"display":"[2] \"Oh, but I’m full.\"", "input":"2", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"Don’t lie to me, you want some.\"",
+			"options":[
+				{"display":"[1] \"It seems that the only way to escape soup is to leave.\"", "input":"1", "dialogue":{
+					"type":"swap", "to":"stalls"
+				}}
+			]
+		}}
+	]
+}

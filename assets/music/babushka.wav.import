@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/babushka.wav-ccb5607e3632268850ccfb665da9fb5b.sample"
+
+[deps]
+
+source_file="res://assets/music/babushka.wav"
+dest_files=[ "res://.import/babushka.wav-ccb5607e3632268850ccfb665da9fb5b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

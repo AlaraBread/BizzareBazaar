@@ -1,0 +1,95 @@
+{
+	"type":"dialogue",
+	"music":5,
+	"flag":"bees_met",
+	"art":"bees",
+	"prompt":"\"I extend my welcomes to you, stranger.\"",
+	"options":[
+		{"display":"[1] \"What are you?\"", "input":"1", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"It is of no concern to you.\"",
+			"options":[
+				{"display":"[1] \"Okay...\"", "input":"1","dialogue":{
+					"type":"return", "levels":1
+				}}
+			]
+		}},
+		{"display":"[2] \"What do you even sell here? There’s nothing on the table!\"", "input":"2", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"DO YOU TAKE AN ANGRY TONE OF VOICE TO ME?\"",
+			"options":[
+				{"display":"[1] \"No no no no no no no sorry sorry sorry sorry lemme rephrase.\"", "input":"1","dialogue":{
+					"type":"return", "levels":1
+				}}
+			]
+		}},
+		{"display":"[3] \"I’m sorry sir, but I do not see anything being openly offered. What do you sell?\"", "input":"3", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"I can offer you... many things. But first, show me what you can give me.\"",
+			"options":[
+				{"display":"[1] \"No thanks...\"", "input":"1","dialogue":{
+					"type":"return", "levels":1
+				}},
+				{"display":"[2] \"Alright, here.\" [show ITEM]", "input":"2", "dialogue":{
+					"type":"if",
+					"options":[
+						{"item":"RECORDER", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Yes... I find this acceptable. Here. Take this.\"",
+							"options":[
+								{"display":"[1] \"Wait—I didn’t say okay—HOLD ON\"", "input":"1", "dialogue":{
+									"type":"dialogue",
+									"prompt":"Before you know it, your RECORDER has been replaced with a NICE HAT. It’s a trucker hat. The net and bill are a bright blue and emblazoned on the white back in bold pink text is \"TRANS RIGHTS.\"",
+									"item":"NICE HAT",
+									"options":[
+										{"display":"Press enter", "input":"*", "dialogue":{
+											"type":"return","levels":4
+										}}
+									]
+								}}
+							]
+						}},
+						{"item":"HONEY", "dialogue":{
+							"type":"dialogue",
+							"prompt":"The buzzing from before now peaks in intensity. Before you can process what is happening, the cloaked figure swipes the HONEY right from your hands. A swarm of bees erupts from under the shroud and disperses in all directions. The fabric, now empty, falls to the ground in a soft heap.",
+							"options":[
+								{"display":"Press enter", "input":"*", "dialogue":{
+									"type":"dialogue",
+									"prompt":"What you have witnessed is beyond belief and your bewilderment may take its toll on your future, but, for now, you search the stall for anything you can take. You find some FLOWERS.\nMaybe you should return to this stall later.",
+									"flag":"bees_gone",
+									"item":"FLOWERS",
+									"options":[
+										{"display":"Press enter", "input":"*", "dialogue":{
+											"type":"swap","to":"stalls"
+										}}
+									]
+								}}
+							]
+						}},
+						{"item":"*", "dialogue":{
+							"type":"dialogue",
+							"prompt":"There is no use for that in my purposes.",
+							"options":[
+								{"display":"Press enter", "input":"*", "dialogue":{
+									"type":"return", "levels":3
+								}}
+							]
+						}}
+					]
+				}}
+			]
+		}},
+		{"display":"[4] \"Do you have a SYSTOLIC MOTIVATOR?\"", "input":"4", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"My motivators are beyond your comprehension.\"",
+			"options":[
+				{"display":"[1] \"Okay...\"", "input":"1","dialogue":{
+					"type":"return", "levels":1
+				}}
+			]
+		}},
+		{"display":"[5] Leave.", "input":"5", "dialogue":{
+			"type":"swap","to":"stalls"
+		}}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"type":"dialogue",
+	"art":"salesman",
+	"prompt":"\"Hey there chapparino. You look like the kind of guy who could use a ride, and I got a perfect one.\"\n\nA seasoned-looking man with a friendly grin and an official-looking suit is standing next to one fine automobile. It will do.",
+	"options":[
+		{"display":"[1] \"I'll take it!\"", "input":"1", "dialogue":{
+			"type":"swap", "to":"car_sale"
+		}},
+		{"display":"[2] \"Does it have any issues?\"", "input":"2", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"Oh, it’s a little beat up, for sure, but trust me. It’s nothing you couldn’t easily fix.\"",
+			"options":[
+				{"display":"[1] \"I'll take it!\"", "input":"1", "dialogue":{
+					"type":"swap", "to":"car_sale"
+				}}
+			]
+		}}
+	]
+}

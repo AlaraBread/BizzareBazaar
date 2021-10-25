@@ -1,0 +1,11 @@
+{
+	"type":"dialogue",
+	"music":2,
+	"art":"woman",
+	"prompt":"You return to the site of that traumatic bee explosion, also known as the fourth stall.\nBut now, you just find a young woman instead.\nHer look is sweet and innocent, but you can’t help but notice a slight gullibility in her eyes.\nThe scent of an alluring perfume is in the air.",
+	"options":[
+				{"display":"Press enter.", "input":"*","dialogue":{
+					"type":"swap","to":"woman/woman"
+				}}
+				]
+}

@@ -1,0 +1,11 @@
+{
+	"type":"dialogue",
+	"art":"main_menu",
+	"prompt":"Press enter to start.",
+	"music":1,
+	"options":[
+		{"display":"", "input":"*", "dialogue":
+			{"type":"swap","to":"intro"}
+		}
+	]
+}

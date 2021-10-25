@@ -1,0 +1,29 @@
+{
+	"type":"if",
+	"art":"car",
+	"options":[
+		{"flag":"grandma_cheese", "dialogue":{
+			"type":"if",
+			"options":[
+				{"flag":"salesman_met", "dialogue":{
+					"type":"if",
+					"options":[
+						{"flag":"systolic_info", "dialogue":{
+							"type":"swap","to":"car3"
+						}},
+						{"flag":"*", "dialogue":{
+							"type":"swap","to":"car2"
+						}}
+					]
+				}},
+				{"flag":"*", "dialogue":{
+					"type":"swap",
+					"to":"salesman_intro"
+				}}
+			]
+		}},
+		{"flag":"*", "dialogue":{
+			"type":"swap","to":"car1"
+		}}
+	]
+}

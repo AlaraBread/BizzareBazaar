@@ -1,0 +1,16 @@
+{
+	"type":"dialogue",
+	"art":"car",
+	"prompt":"After a quick installation, the car is up and running.",
+	"options":[
+		{"display": "Press enter", "input":"*", "dialogue":{
+			"type":"dialogue",
+			"prompt":"You have won this bizarre bazaar.\n\nCongratulations.",
+			"options":[
+				{"display":"[1] Go to the main menu.", "input":"1", "dialogue":{
+					"type":"swap","to":"main_menu"
+				}}
+			]
+		}}
+	]
+}

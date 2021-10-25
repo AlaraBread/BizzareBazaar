@@ -1,0 +1,110 @@
+{
+	"type":"dialogue",
+	"art":"salesman",
+	"music":1,
+	"prompt":"\"Oh hey there buddy. Enjoying your sweet ride?\"",
+	"options":[
+		{"display":"[1] \"Go screw yourself.\"", "input":"1", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"Have fun chapparino. Eh heheheheh!\"",
+			"options":[
+				{"display":"Press enter", "input":"*", "dialogue":{
+					"type":"swap", "to":"stalls"
+				}}
+			]
+		}},
+		{"display":"[2] \"I know you took the SYSTOLIC MOTIVATOR.\"", "input":"2", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"What?\"",
+			"options":[
+				{"display":"[1] \"I know just how valuable it is. You thought you could make quite the deal by selling the car at a markup without it.\"", "input":"1", "dialogue":{
+					"type":"if",
+					"options":[
+						{"flag":"hustle_ending","dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh I get it, you’re bluffing me, huh? Won’t work buddy. You’re dealing with a shark. Go back to swim with your little school. After all, I scammed you.\"",
+							"options":[
+								{"display":"[1] \"Damn you!\" [LEAVE]", "input":"1", "dialogue":{
+									"type":"swap","to":"stalls"
+								}},
+								{"display":"[2] \"Sure, that’s what you think. But I’m the better scammer, and I know it.\"", "input":"2", "dialouge":{
+									"type":"dialogue",
+									"music":0,
+									"prompt":"\"Damn, you love bluffing, don’t you?\"",
+									"options":[
+										{"display":"[1] \"It’s no bluff. You’re not as hot as you think you are. A little birdie told me that you failed to scam the most gullible girl that walked by here. Some scammer you are.\"", "dialogue":{
+											"type":"if",
+											"options":[
+												{"item":"SCAM BOOK", "dialogue":{
+													"type":"dialogue",
+													"prompt":"\"What!? How do you know that?\"",
+													"options":[
+														{"display":"[1] \"Haha, suck it!\" [LEAVE]", "input":"1", "dialogue":{
+															"type":"swap", "to":"stalls"
+														}},
+														{"display":"[2] \"Because I’m the better scammer. I’ve studied.\"", "input":"2", "dialogue":{
+															"type":"dialogue",
+															"prompt":"\"Studied? What do you mean? I got YEARS of experience on you kid!\"",
+															"options":[
+																{"display":"[1] \"Yeah, but I know the science. The science of deal-making.\"", "input":"1", "dialogue":{
+																	"type":"dialogue",
+																	"prompt":"\"What? Science?\"",
+																	"options":[
+																		{"display":"[1] \"Yeah, all right in this nifty little book. All you’d need to know about hustles, buddy. From the finest in the art form.\"", "input":"1", "dialogue":{
+																			"type":"dialogue",
+																			"prompt":"Oh, I see now, you’re trying to pull a fast one? It’ll never work.",
+																			"options":[
+																				{"display":"[1] \"As if I’d do something so obvious. This is the real deal. Now, you want the book or would you rather get stuck to losing deals to little girls?\"", "input":"1", "dialogue":{
+																					"type":"dialogue",
+																					"prompt":"\"Arggh, fine! Here, take your WAD OF CASH back for it.\"",
+																					"options":[
+																						{"display":"[1] \"No, you know what I want, the SYSTOLIC MOTIVATOR please.\"", "input":"1", "dialogue":{
+																							"type":"dialogue",
+																							"prompt":"\"Damn!  Fine! Here you go! Just give me that book! No one beats me!\"\n\nYou exchanged the SCAM BOOK for the SYSTOLIC MOTIVATOR.",
+																							"item":"SYSTOLIC MOTIVATOR",
+																							"options":[
+																								{"display":"Press enter", "input":"*", "dialogue":{
+																									"type":"swap","to":"win"
+																								}}
+																							]
+																						}}
+																					]
+																				}}
+																			]
+																		}}
+																	]
+																}}
+															]
+														}}
+													]
+												}},
+												{"item":"*", "dialogue":{
+													"type":"dialogue",
+													"prompt":"\"What!? How do you know that?\"",
+													"options":[
+														{"display":"[1] \"Haha, suck it!\" [LEAVE]", "input":"1", "dialogue":{
+															"type":"swap", "to":"stalls"
+														}}
+													]
+												}}
+											]
+										}}
+									]
+								}}
+							]
+						}},
+						{"flag":"*","dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh I get it, you’re bluffing me, huh? Won’t work buddy. You’re dealing with a shark. Go back to swim with your little school. After all, I scammed you.\"",
+							"options":[
+								{"display":"[1] \"Damn you!\" [LEAVE]", "input":"1", "dialogue":{
+									"type":"swap","to":"stalls"
+								}}
+							]
+						}}
+					]
+				}}
+			]
+		}}
+	]
+}

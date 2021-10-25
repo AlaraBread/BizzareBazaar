@@ -1,0 +1,17 @@
+{
+	"type":"dialogue",
+	"art":"salesman",
+	"music":1,
+	"prompt":"\"Oh hey there buddy. Enjoying your sweet ride?\"",
+	"options":[
+		{"display":"[1] \"Go screw yourself.\"", "input":"1", "dialogue":{
+			"type":"dialogue",
+			"prompt":"\"Have fun chapparino. Eh heheheheh!\"",
+			"options":[
+				{"display":"Press enter", "input":"*", "dialogue":{
+					"type":"swap", "to":"stalls"
+				}}
+			]
+		}}
+	]
+}

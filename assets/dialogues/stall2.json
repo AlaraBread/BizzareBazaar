@@ -1,0 +1,8 @@
+{
+	"type":"if",
+	"options":[
+		{"flag":"ian_sweater", "dialogue":{"type":"swap", "to":"ian/ian2"}},
+		{"flag":"ian_met", "dialogue":{"type":"swap","to":"ian/ian1"}},
+		{"flag":"*", "dialogue":{"type":"swap", "to":"ian/ian_intro"}}
+	]
+}

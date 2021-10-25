@@ -1,0 +1,50 @@
+{
+	"type":"dialogue",
+	"prompt":"You saunter back on over to the first stall.\nBabushka is still there, with all her baked goods.\nYou still feel the comfort of a childhood home.\n\"Oh yes? Young man.\"",
+	"music":3,
+	"art":"grandma",
+	"options":[
+		{"display":"[1] \"Hello grandma.\"","input":"1","dialogue":{
+			"type":"dialogue",
+			"prompt":"What makes you come to visit?",
+			"options":[
+				{"display":"[1] \"I got something you might like.\" [Show ITEM]", "input":"1", "dialogue":{
+					"type":"if", "options":[
+						{"item":"NICE HAT", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh, what a nice hat! Of course a real gentleman like you would have something like it.\"",
+							"options":[
+								{"display":"[1] \"Would you like it\"", "input":"1", "dialogue":{
+									"type":"dialogue",
+									"prompt":"\"Oh! Well… yes, I would. Here, take this.\"\nYou have exchanged the NICE HAT for some HONEY. She very well may have collected it herself.",
+									"item":"HONEY",
+									"flag":"grandma_hat",
+									"options":[
+										{"display":"Press enter", "input":"*", "dialogue":{
+											"type":"return", "levels":4
+										}}
+									]
+								}},
+								{"display":"[2] \"Yep, real neat.\"", "input":"2", "dialogue":{
+									"type":"return","levels":3
+								}}
+							]
+						}},
+						{"item":"*", "dialogue":{
+							"type":"dialogue",
+							"prompt":"\"Oh that’s good, that’s good. You should keep it.\"",
+							"options":[
+								{"display":"[1] \"Okay\"", "input":"1", "dialogue":{
+									"type":"return", "levels":3
+								}},
+							]
+						}}
+					]
+				}}
+			]
+		}},
+		{"display":"[2] \"I need to get going.\" [LEAVE]", "input":"2", "dialogue":{
+			"type":"swap","to":"stalls"
+		}}
+	]
+}

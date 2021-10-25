@@ -1,0 +1,17 @@
+{
+	"type":"dialogue",
+	"music":5,
+	"art":"bees",
+	"prompt":"You waltz on over to the fourth stall.\nYou cannot see any items on the table, but a great cloaked figure looms over you. The grey shroud reveals no flesh and as you peer into the hole of the hood, all you see is darkness.",
+	"options":[
+		{"display":"Press enter","input":"*","dialogue":{
+			"type":"dialogue",
+			"prompt":"Two gloves seeming not quite fully attached to their sleeves run over a keyboard, which is hooked up to some sort of text to speech machine.\nStrong buzzing can be heard emanating from under the cloak.",
+			"options":[
+				{"display":"Press enter", "input":"*", "dialogue":{
+					"type":"swap","to":"bees/bees1"
+				}}
+			]
+		}}
+	]
+}

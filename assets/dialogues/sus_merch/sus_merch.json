@@ -1,0 +1,155 @@
+{
+	"type": "dialogue",
+	"prompt": "\"Yes yes yes yes yes. You, you have come?\"",
+	"art": "merch",
+	"music":6,
+	"flag":"merch_met",
+	"options": [{
+			"display": "[1] \"Yes..?\"",
+			"input": "1",
+			"dialogue": {
+				"type": "dialogue",
+				"prompt": "\"Oh ho ho ho ho ho, yes yes yes yes, you have come to offer me something, no?\"",
+				"options": [{
+						"display": "[1] \"Yes, I have.\"",
+						"input": "1",
+						"dialogue": {
+							"type": "if",
+							"options": [{
+									"item": "FUZZY DICE",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"Woah ho ho! This item… is very powerful! Yes yes yes, good item, powerful item! I offer you… oh oh ho, very useful. Arcade tickets. From cursed place. Chunky Cheese. Very bad aura. Very powerful. Yes yes yes. You take, no?\"",
+										"options": [{
+												"display": "[1] Oh... okay...",
+												"input": "1",
+												"dialogue": {
+													"type": "dialogue",
+													"prompt": "You have exchanged your FUZZY DICE for a box of ARCADE TICKETS. Apparently they’re from Chunky Cheese. Whatever that is. Ignore the merchant’s cackling.",
+													"item": "ARCADE TICKETS",
+													"options": [{
+														"display": "Press enter",
+														"input": "*",
+														"dialogue": {
+															"type": "return",
+															"levels": 4
+														}
+													}]
+												}
+											},
+											{
+												"display": "[2] \"Uhhhh…\" Run Away",
+												"input": "2",
+												"dialogue": {
+													"type": "swap",
+													"to": "stalls"
+												}
+											}
+										]
+									}
+								},
+								{
+									"item": "PERFUME",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"What is this? I have no need for this!\"",
+										"options": [{
+											"display": "[1] \"My nose tells me otherwise.\"",
+											"input": "1",
+											"dialogue": {
+												"type": "dialogue",
+												"prompt": "\"You. You make uh good argument. Yes yes yes. Very good argument. I reconsider. Is very useful. I shall take.\"\nHe exchanges the PERFUME for a box of Russian NESTING DOLLS. He applies it immediately. Unfortunately, he has put too much on and now smells even worse. Some things are just fated.",
+												"item": "NESTING DOLLS",
+												"options": [{
+													"display": "Press enter",
+													"input": "*",
+													"dialogue": {
+														"type": "return",
+														"levels": 4
+													}
+												}]
+											}
+										}]
+									}
+								},
+								{
+									"item": "STRANGE URN",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"WOAH HO HO HO! This urn, it has much power, much power. Good auras emanate from it. Yes, I want. I want very much. But is valuable, no? I give good item in return. You will be happy. Very happy, very happy indeed.. Wait a second.\"",
+										"options": [{
+											"display": "Hit enter.",
+											"input": "*",
+											"dialogue": {
+												"type": "dialogue",
+												"prompt": "\"Yes. You. You… will take this.\"\nHe unveils a plush of a children’s play-place mascot. It is the iconic Chunky Cheese.\n\"Oh oho oho! Is very powerful. Powerful yes. You take, but be careful. Very careful. Bad things could happen.\"\nYou have exchanged your STRANGE URN for an OMINOUS PLUSH",
+												"item": "OMINOUS PLUSH",
+												"options": [{
+													"display": "Press enter",
+													"input": "*",
+													"dialogue": {
+														"type": "return",
+														"levels": 5
+													}
+												}]
+											}
+										}]
+									}
+								},
+								{
+									"item": "*",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "He rubs his hands together, grinning all the while. He has more items on his stand than teeth.\n\"This item… it is… no good. Yes yes yes, no good, no good at all. You. You come back. Come back when you, yes yes yes, he he he, have better item. Yes yes yes come back with, better item, ho ho ho…\"",
+										"options": [{
+											"display": "[1] Leave",
+											"input": "1",
+											"dialogue": {
+												"type": "swap",
+												"to": "stalls"
+											}
+										}]
+									}
+								}
+							]
+						}
+					},
+					{
+						"display": "[2] \"Actually, I wanted to know if you had a SYSTOLIC MOTIVATOR?\"",
+						"input": "2",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "\"Ohhh! Systolic motivators? Very good item. Very good item. I no have. Is very valuable, yes yes yes? If you had one, you would be uhh very rich, no? Oh ho ho ho.\"",
+							"flag": "systolic_info",
+							"options": [{
+								"display": "[1] Okay",
+								"input": "1",
+								"dialogue": {
+									"type": "return",
+									"levels": 2
+								}
+							}]
+						}
+					},
+					{
+						"display": "[3] \"I will offer you my exit.\"",
+						"input": "3",
+						"dialogue": {
+							"type": "swap",
+							"to": "stalls"
+						}
+					}
+				]
+			}
+		},
+		{
+			"display": "[2] Run Away",
+			"input": "2",
+			"dialogue": {
+				"type": "swap",
+				"to": "stalls"
+			}
+		}
+
+	]
+}

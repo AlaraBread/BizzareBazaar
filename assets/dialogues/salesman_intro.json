@@ -1,0 +1,16 @@
+{
+	"flag":"salesman_met",
+	"type":"dialogue",
+	"prompt":"You return to you broken down car, still in need of a SYSTOLIC MOTIVATOR.",
+	"options":[
+		{"display":"Press enter", "input":"*", "dialogue":{
+			"type":"dialogue",
+			"prompt":"Oh, but so did someone else. That sleaze of a used car salesman.\nHis suit wasn’t official-looking after all. It’s beige and is paired with a red Hawaiian shirt and even a gold chain. Tacky. The nearing middle-aged man has a pound of gel atop his head, with some hair in the mix. His slimy grin reveals a gold tooth. Of course he has one.\n\nThe scent of failed dreams is in the air.",
+			"options":[
+				{"display":"Press enter", "input":"*", "dialogue":{
+					"type":"swap","to":"car"
+				}}
+			]
+		}}
+	]
+}

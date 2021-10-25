@@ -1,0 +1,22 @@
+{
+	"type":"dialogue",
+	"prompt":"",
+	"art":"",
+	"options":[
+		{"display":"[1] Go to stall 1.", "input":"1", "dialogue":{
+			"type":"swap", "to":"stall1"
+		}},
+		{"display":"[2] Go to stall 2.", "input":"2", "dialogue":{
+			"type":"swap", "to":"stall2"
+		}},
+		{"display":"[3] Go to stall 3.", "input":"3", "dialogue":{
+			"type":"swap", "to":"stall3"
+		}},
+		{"display":"[4] Go to stall 4.", "input":"4", "dialogue":{
+			"type":"swap", "to":"stall4"
+		}},
+		{"display":"[5] Go to your car.", "input":"5", "dialogue":{
+			"type":"swap", "to":"car"
+		}}
+	]
+}

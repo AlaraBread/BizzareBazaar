@@ -1,0 +1,16 @@
+{
+	"type":"dialogue",
+	"art":"",
+	"prompt":"It’s that time again.\nYes.\nIt’s the season once more.\nFlea market season.",
+	"options":[
+		{"display":"Press enter.", "input":"*", "dialogue":{
+			"type":"dialogue",
+			"art":"",
+			"item":"WAD OF CASH",
+			"prompt":"Every year, your town has a flea market the likes of which the world has never seen. Stalls are flooded with goods and peoples from all walks of life.\nIn this bizarre bazaar, anything can be found.\nBut you just want a car and you’ve got a WAD OF CASH in your pocket waiting just for it.\nBefore long, you find a man selling one.",
+			"options":[
+				{"display":"Press enter.", "input":"*", "dialogue":{"type":"swap", "to":"salesman1"}}
+			]
+		}}
+	]
+}
