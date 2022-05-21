@@ -4,120 +4,218 @@
 	"music":3,
 	"art":"grandma",
 	"flag":"grandma_met",
-	"options":[
-		{"display":"[1] Yes. I am...", "input":"1", "dialogue":{
-			"type":"if",
-			"options":[
-				{"item":"ARCADE TICKETS", "dialogue":{
-					"type":"dialogue",
-					"prompt":"\"I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
-					"options":[
-						{"display":"[1] \"I have nothing to give you...\"", "input":"1","dialogue":{
-							"type":"dialogue",
-							"prompt":"\"Come back here when you have a gift for babushka!\"",
-							"options":[
-								{"display":"Press enter","input":"*","dialogue":{
-									"type":"return","levels":5
-								}}
+	"options": [
+		{
+			"display": "[1] \"Yes. I am...\"",
+			"input": "1",
+			"dialogue": {
+				"type": "if",
+				"options": [
+					{
+						"item": "ARCADE TICKETS",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "\"I spent so long making this sweater; you need to take it. But first, give me a gift.\"",
+							"options": [
+								{
+									"display": "[1] \"I have nothing to give you...\"",
+									"input": "1",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"Come back here when you have a gift for babushka!\"",
+										"options": [
+											{
+												"display": "Press enter",
+												"input": "*",
+												"dialogue": {
+													"type": "return",
+													"levels": 5
+												}
+											}
+										]
+									}
+								},
+								{
+									"display": "[2] \"You like Chunky Cheese?\" [show ITEM]",
+									"input": "2",
+									"dialogue": {
+										"type": "dialogue",
+										"item": "SWEATER",
+										"flag": "grandma_cheese",
+										"prompt": "\"Ohh, my granddaughter loved Chunky Cheese. I’d love them.\"\nYou exchange the ARCADE TICKETS for a SWEATER. The sweater is hand-knitted and made with loads of love.\n\"Thanks grandma.\"\n\"You better come to visit, young man!\"",
+										"options": [
+											{
+												"display": "Press enter",
+												"input": "*",
+												"dialogue": {
+													"type": "return",
+													"levels": 5
+												}
+											}
+										]
+									}
+								}
 							]
-						}},
-						{"display":"[2] \"You like Chunky Cheese?\" [show ITEM]", "input":"2","dialogue":{
-							"type":"dialogue",
-							"item":"SWEATER",
-							"flag":"grandma_cheese",
-							"prompt":"\"Ohh, my granddaughter loved Chunky Cheese. I’d love them.\"\nYou exchange the ARCADE TICKETS for a SWEATER. The sweater is hand-knitted and made with loads of love.\n\"Thanks grandma.\"\n\"You better come to visit, young man!\"",
-							"options":[
-								{"display":"Press enter", "input":"*", "dialogue":{
-									"type":"return","levels":5
-								}}
+						}
+					},
+					{
+						"item": "*",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "\"I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
+							"options": [
+								{
+									"display": "[1] \"I have nothing to give you...\" [show ITEM]",
+									"input": "1",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"Come back here when you have a gift for babushka!\"",
+										"options": [
+											{
+												"display": "Press enter",
+												"input": "*",
+												"dialogue": {
+													"type": "return",
+													"levels": 5
+												}
+											}
+										]
+									}
+								}
 							]
-						}}
-					]
-				}},
-				{"item":"*","dialogue":{
-					"type":"dialogue",
-					"prompt":"\"I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
-					"options":[
-						{"display":"[1] \"I have nothing to give you...\" [show ITEM]", "input":"1","dialogue":{
-							"type":"dialogue",
-							"prompt":"\"Come back here when you have a gift for babushka!\"",
-							"options":[
-								{"display":"Press enter","input":"*","dialogue":{
-									"type":"return","levels":5
-								}}
+						}
+					}
+				]
+			}
+		},
+		{
+			"display": "[2] \"N-no thanks.\"",
+			"input": "2",
+			"dialogue": {
+				"type": "if",
+				"options": [
+					{
+						"item": "ARCADE TICKETS",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "\"Nonsense. I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
+							"options": [
+								{
+									"display": "[1] \"I have nothing to give you...\" [show ITEM]",
+									"input": "1",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"Come back here when you have a gift for babushka!\"",
+										"options": [
+											{
+												"display": "Press enter",
+												"input": "*",
+												"dialogue": {
+													"type": "return",
+													"levels": 5
+												}
+											}
+										]
+									}
+								},
+								{
+									"display": "[2] \"You like Chunky Cheese?\" [show ITEM]",
+									"input": "2",
+									"dialogue": {
+										"type": "dialogue",
+										"item": "SWEATER",
+										"flag": "grandma_cheese",
+										"prompt": "\"Ohh, my granddaughter loved Chunky Cheese. I’d love them.\"\nYou exchange the ARCADE TICKETS for a SWEATER. The sweater is hand-knitted and made with loads of love.",
+										"options": [
+											{
+												"display": "[1] \"Thanks grandma.\"",
+												"input": "1",
+												"dialogue": {
+													"type": "dialogue",
+													"prompt": "\"You better come to visit, young man!\"",
+													"options": [
+														{
+															"display": "Press enter",
+															"input": "*",
+															"dialogue": {
+																"type": "return",
+																"levels": 6
+															}
+														}
+													]
+												}
+											}
+										]
+									}
+								}
 							]
-						}}
-					]
-				}}
-			]
-		}},
-		{"display":"[2] N-no thanks.", "input":"2", "dialogue":{
-			"type":"if",
-			"options":[
-				{"item":"ARCADE TICKETS", "dialogue":{
-					"type":"dialogue",
-					"prompt":"\"Nonsense. I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
-					"options":[
-						{"display":"[1] \"I have nothing to give you...\" [show ITEM]", "input":"1","dialogue":{
-							"type":"dialogue",
-							"prompt":"\"Come back here when you have a gift for babushka!\"",
-							"options":[
-								{"display":"Press enter","input":"*","dialogue":{
-									"type":"return","levels":5
-								}}
+						}
+					},
+					{
+						"item": "*",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "\"Nonsense. I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
+							"options": [
+								{
+									"display": "[1] \"I have nothing to give you...\" [show ITEM]",
+									"input": "1",
+									"dialogue": {
+										"type": "dialogue",
+										"prompt": "\"Come back here when you have a gift for babushka!\"",
+										"options": [
+											{
+												"display": "Press enter",
+												"input": "*",
+												"dialogue": {
+													"type": "return",
+													"levels": 5
+												}
+											}
+										]
+									}
+								}
 							]
-						}},
-						{"display":"[2] \"You like Chunky Cheese?\" [show ITEM]", "input":"2","dialogue":{
-							"type":"dialogue",
-							"item":"SWEATER",
-							"flag":"grandma_cheese",
-							"prompt":"\"Ohh, my granddaughter loved Chunky Cheese. I’d love them.\"\nYou exchange the ARCADE TICKETS for a SWEATER. The sweater is hand-knitted and made with loads of love.",
-							"options":[
-								{"display":"[1] \"Thanks grandma.\"", "input":"1", "dialogue":{
-								  "type":"dialogue",
-								  "prompt":"\"You better come to visit, young man!\"",
-								  "options":[{"display":"Press enter","input":"*","dialogue":{
-									"type":"return","levels":6
-								}}]
-								}}
+						}
+					}
+				]
+			}
+		},
+		{
+			"display": "[3] \"Hey grandma, I got shit to sell.\"",
+			"input": "3",
+			"dialogue": {
+				"type": "dialogue",
+				"prompt": "\"OH! You kiss your mother with that mouth!?\"\nShe grabs your ear with the force of a thousand suns.\n\"Take a seat, young man\"",
+				"options": [
+					{
+						"display": "[1] Reluctantly take a seat.",
+						"input": "1",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "After a long lecture about the importance of table manners, she lets you go. \"Come again and get some food next time!\"",
+							"options": [
+								{
+									"display": "Press enter",
+									"input": "*",
+									"dialogue": {
+										"type": "return",
+										"levels": 2
+									}
+								}
 							]
-						}}
-					]
-				}},
-				{"item":"*","dialogue":{
-					"type":"dialogue",
-					"prompt":"\"Nonsense. I spent so long making this sweater, you need to take it. But first, give me a gift.\"",
-					"options":[
-						{"display":"[1] \"I have nothing to give you...\" [show ITEM]", "input":"1","dialogue":{
-							"type":"dialogue",
-							"prompt":"\"Come back here when you have a gift for babushka!\"",
-							"options":[
-								{"display":"Press enter","input":"*","dialogue":{
-									"type":"return","levels":5
-								}}
-							]
-						}}
-					]
-				}}
-			]
-		}},
-		{"display":"[3] I'm busy. [LEAVE]", "input":"3", "dialogue":{
-			"type":"swap", "to":"stalls"
-		}},
-		{"display":"[4] Hey grandma, I got shit to sell.", "input":"4", "dialogue":{
-			"type":"dialogue",
-			"prompt":"\"OH! You kiss your mother with that mouth!?\"\nShe grabs your ear with the force of a thousand suns.\n\"Take a seat, young man\"",
-			"options":[
-				{"display":"[1] Reluctantly take a seat.", "input":"1", "dialogue":{
-					"type":"dialogue",
-					"prompt":"After a long lecture about the importance of table manners, she lets you go. \"Come again and get some food next time!\"",
-					"options":[
-						{"display":"Press enter","input":"*","dialogue":{
-							"type":"return", "levels":2
-						}}
-					]
-				}}
-			]
-		}}
+						}
+					}
+				]
+			}
+		},
+		{
+			"display": "[4] \"I'm busy.\" [LEAVE]",
+			"input": "4",
+			"dialogue": {
+				"type": "swap",
+				"to": "stalls"
+			}
+		}
 	]
 }

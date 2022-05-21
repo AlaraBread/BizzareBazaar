@@ -6,7 +6,7 @@
 	"options":[
 		{"display":"[1] \"Hello grandma.\"","input":"1","dialogue":{
 			"type":"dialogue",
-			"prompt":"What makes you come to visit?",
+			"prompt":"\"What makes you come to visit?\"",
 			"options":[
 				{"display":"[1] \"I got something you might like.\" [Show ITEM]", "input":"1", "dialogue":{
 					"type":"if", "options":[
@@ -14,7 +14,7 @@
 							"type":"dialogue",
 							"prompt":"\"Oh, what a nice hat! Of course a real gentleman like you would have something like it.\"",
 							"options":[
-								{"display":"[1] \"Would you like it\"", "input":"1", "dialogue":{
+								{"display":"[1] \"Would you like it?\"", "input":"1", "dialogue":{
 									"type":"dialogue",
 									"prompt":"\"Oh! Well… yes, I would. Here, take this.\"\nYou have exchanged the NICE HAT for some HONEY. She very well may have collected it herself.",
 									"item":"HONEY",

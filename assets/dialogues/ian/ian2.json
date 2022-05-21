@@ -5,42 +5,43 @@
 	"options":[
 	{"flag":"*", "dialogue":{
 		"type":"dialogue",
-		"prompt":[{"flag":"ian_sweater_met","prompt":"Anything else?"},{"flag":"*","prompt":"You return to the second stall.\nThe Canterburian and his heaping piles of junk remained, but now the fellow is wearing the sweater you gave him.\nThe faint whirring of a Hammond organ can still be heard, but is occasionally pierced by the growl of someone’s stomach.\n\n\"Oy, mate, thanks for the sweater.\""}],
-		"art":"",
+		"prompt":[{"flag":"ian_sweater_met","prompt":"Anything else?"},{"flag":"*","prompt":"You return to the second stall.\nThe Canterburian and his heaping piles of junk are still there, but now the fellow is wearing the sweater you gave him.\nThe faint whirring of a Hammond organ can still be heard, but is occasionally pierced by the growl of someone’s stomach.\n\n\"Oy, mate, thanks for the sweater.\""}],
+		"art":"ian",
 		"flag":"ian_sweater_met",
 		"options":[
-		{"display":"[1] You appreciate it, right?","input":"1","dialogue":{"type":"if",
+		{"display":"[1] \"You appreciate it, right?\"","input":"1","dialogue":{"type":"if",
 			"options":[{"item":"WARM SOUP","dialogue":{
 			"type":"dialogue",
 			"prompt":"\"Indeed I do, Indeed I do.\"",
 			"options":[
-			{"display":"[1] You know, I got more goods from grandmama... [show WARM SOUP]","input":"1","dialogue":{
+			{"display":"[1] \"You know, I got more goods from grandmama...\" [show ITEM]","input":"1","dialogue":{
 				"type":"dialogue",
 				"prompt":"\"That does look good, but… I shouldn’t be spending more money.\"",
 				"options":[
-				{"display":"[1] You know you want it.","input":"1","dialogue":{
+				{"display":"[1] \"You know you want it.\"","input":"1","dialogue":{
 					"type":"dialogue",
 					"prompt":"\"Well, it ain’t the first night I’ve been hungry.\"",
 					"options":[
-					{"display":"[1] Your loss.", "input":"1","dialogue":{
+					{"display":"[1] \"Your loss, then.\"", "input":"1","dialogue":{
 						"type":"return","levels":3
 					}}
 					]
 				}},
-				{"display":"[2] Hey man, that’s fair.","input":"2","dialogue":{
+				{"display":"[2] \"Hey man, that’s fair.\"","input":"2","dialogue":{
 					"type":"dialogue",
 					"prompt":"\"Ian nods in respect, but before long his stomach’s growls can be heard once more.\"",
 					"options":[
-					{"display":"[1] Sounds like you’re real hungry though.", "input":"1","dialogue":{
+					{"display":"[1] \"Sounds like you’re real hungry though.\"", "input":"1","dialogue":{
 						"type":"dialogue",
 						"prompt":"\"It’s hard to disagree.\"",
 						"options":[
-						{"display":"[1] Tell you what. You clearly got the better end of the recorder deal, so how about you make it up to me by giving me something else for this soup?", "input":"1","dialogue":{
+						{"display":"[1] \"Tell you what. You clearly got the better end of the recorder deal, so how about you make it up to me by giving me something else for this soup?\"", "input":"1","dialogue":{
 							"type":"dialogue",
 							"prompt":"\"Alright fine. Here. Take this. Just give me the soup already.\"\n\nYou traded the WARM SOUP for the STRANGE URN.",
 							"item":"STRANGE URN",
 							"options":[
-							{"display":"[1] Thanks.", "input":"1", "dialogue":{
+								{
+									"display": "[1] \"Thanks.\"", "input":"1", "dialogue":{
 								"type":"return", "levels":6
 							}}
 							]
@@ -58,32 +59,32 @@
 				"type":"dialogue",
 				"prompt":"\"Indeed I do, Indeed I do.\"",
 				"options":[
-				{"display":"[1] Cool.", "input":"1", "dialogue":{
+				{"display":"[1] \"Cool.\"", "input":"1", "dialogue":{
 					"type":"return", "levels":2
 				}}
 				]
 			}}
 			]
 		}},
-		{"display":"[2] Screw that, look at THIS. [show ITEM]", "input":"2","dialogue":{
+		{"display":"[2] \"Screw that, look at THIS. [show ITEM]\"", "input":"2","dialogue":{
 			"type":"dialogue",
 			"prompt":"\"...no\"",
 			"options":[
-			{"display":"[1] Damn.", "input":"1","dialogue":{
+			{"display":"[1] \"Damn.\"", "input":"1","dialogue":{
 				"type":"return", "levels":1
 			}}
 			]
 		}},
-		{"display":"[3] Yeah, and all you gave me was that DINKY recorder.", "input":"3", "dialogue":{
+		{"display":"[3] \"Yeah, and all you gave me was that DINKY recorder.\"", "input":"3", "dialogue":{
 			"type":"dialogue",
 			"prompt":"Ian merely glares at you. Perhaps you should go.",
 			"options":[
-				{"display":"[1] ...", "input":"1","dialogue":{
+				{"display":"[1] \"...\"", "input":"1","dialogue":{
 					"type":"return","levels":1
 				}}
 			]
 		}},
-		{"display":"[4] Leave.", "input":"4", "dialogue":{
+		{"display":"[4] [LEAVE]", "input":"4", "dialogue":{
 			"type":"swap", "to":"stalls"
 		}}
 		]

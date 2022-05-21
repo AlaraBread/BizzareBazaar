@@ -68,7 +68,7 @@
 						}},
 						{"item":"*", "dialogue":{
 							"type":"dialogue",
-							"prompt":"There is no use for that in my purposes.",
+							"prompt":"\"There is no use for that in my purposes.\"",
 							"options":[
 								{"display":"Press enter", "input":"*", "dialogue":{
 									"type":"return", "levels":3
@@ -88,7 +88,7 @@
 				}}
 			]
 		}},
-		{"display":"[5] Leave.", "input":"5", "dialogue":{
+		{"display":"[5] [LEAVE]", "input":"5", "dialogue":{
 			"type":"swap","to":"stalls"
 		}}
 	]

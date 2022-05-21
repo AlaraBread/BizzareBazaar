@@ -6,7 +6,7 @@
 	"options":[
 		{"display":"Press enter.", "input":"*","dialogue":{
 			"type":"dialogue",
-			"prompt":"Countless strange knick-knacks are scattered about, ranging from skull ink holders to miniature carved pumpkins. All manner of instruments and audio equipment are heaped in one great pile off to the side—a twelve-string guitar; multiple wind instruments, some bent; amplifiers; and a small electric organ. Bewildering books sporting titles such as “The Entropy of Human Multiplication” and “Pursuing Existence” are stacked in another pile.",
+			"prompt":"Countless strange knick-knacks are scattered about, ranging from skull ink holders to miniature carved pumpkins. All manner of instruments and audio equipment are heaped in one great pile off to the side: a twelve-string guitar; multiple wind instruments, some bent; amplifiers; and a small electric organ. Bewildering books sporting titles such as “The Entropy of Human Multiplication” and “Pursuing Existence” are stacked in another pile.",
 			"options":[
 			{"display":"Press enter.", "input":"*","dialogue":{
 				"type":"dialogue",

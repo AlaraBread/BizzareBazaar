@@ -21,7 +21,7 @@
 										"type": "dialogue",
 										"prompt": "\"Woah ho ho! This item… is very powerful! Yes yes yes, good item, powerful item! I offer you… oh oh ho, very useful. Arcade tickets. From cursed place. Chunky Cheese. Very bad aura. Very powerful. Yes yes yes. You take, no?\"",
 										"options": [{
-												"display": "[1] Oh... okay...",
+												"display": "[1] \"Oh... okay...\"",
 												"input": "1",
 												"dialogue": {
 													"type": "dialogue",
@@ -38,7 +38,7 @@
 												}
 											},
 											{
-												"display": "[2] \"Uhhhh…\" Run Away",
+												"display": "[2] \"Uhhhh…\" [RUN AWAY]",
 												"input": "2",
 												"dialogue": {
 													"type": "swap",
@@ -102,7 +102,7 @@
 										"type": "dialogue",
 										"prompt": "He rubs his hands together, grinning all the while. He has more items on his stand than teeth.\n\"This item… it is… no good. Yes yes yes, no good, no good at all. You. You come back. Come back when you, yes yes yes, he he he, have better item. Yes yes yes come back with, better item, ho ho ho…\"",
 										"options": [{
-											"display": "[1] Leave",
+											"display": "[1] [LEAVE]",
 											"input": "1",
 											"dialogue": {
 												"type": "swap",
@@ -122,7 +122,7 @@
 							"prompt": "\"Ohhh! Systolic motivators? Very good item. Very good item. I no have. Is very valuable, yes yes yes? If you had one, you would be uhh very rich, no? Oh ho ho ho.\"",
 							"flag": "systolic_info",
 							"options": [{
-								"display": "[1] Okay",
+								"display": "[1] \"I see.\"",
 								"input": "1",
 								"dialogue": {
 									"type": "return",
@@ -143,7 +143,7 @@
 			}
 		},
 		{
-			"display": "[2] Run Away",
+			"display": "[2] [RUN AWAY]",
 			"input": "2",
 			"dialogue": {
 				"type": "swap",

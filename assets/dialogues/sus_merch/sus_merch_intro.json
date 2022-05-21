@@ -2,15 +2,15 @@
 	"type":"dialogue",
 	"music":6,
 	"art":"merch",
-	"prompt":"You amble on over to the third stall.\n This stall is surrounded by strange and mysterious artifacts.",
+	"prompt":"You amble on over to the third stall.\nThis stall is surrounded by strange and mysterious artifacts.",
 	"options":[
 		{"display":"Press enter.", "input":"*","dialogue":{
 			"type":"dialogue",
-			"prompt":"You feel almost cursed just looking at them. Various kinds of jewelry, in all shapes and colors. Carved heads of stone adorned with drawings of chalk. A sign that reads \"LIVE LAUGH LOVE.\" Truly horrifying",
+			"prompt":"You almost feel cursed just looking at them. Various kinds of jewelry, in all shapes and colors. Carved heads of stone adorned with drawings of chalk. A sign that reads \"LIVE LAUGH LOVE.\" Truly horrifying",
 			"options":[
 			{"display":"Press enter.", "input":"*","dialogue":{
 				"type":"dialogue",
-				"prompt":"The owner is no less of an oddity. His nails are long and his beard even longer. The last time he cut his nails was probably the last time he combed his hair. When that was, no one knows. Upon sighting you, he comes close. Very close. Too close. He scans you with his right eye, which is somehow larger than his left. \nUnease is in the air. That, and a strange odor.",
+				"prompt":"The owner is no less of an oddity. His nails are long and his beard even longer. The last time he cut his nails was probably the last time he combed his hair. When that was, no one knows. Upon sighting you, he comes close. Very close. Too close. He scans you with his right eye, which is somehow larger than his left. \nUnease is in the air. And a strange odor.",
 				"options":[
 				{"display":"Press enter.", "input":"*","dialogue":{
 					"type":"swap","to":"sus_merch/sus_merch"

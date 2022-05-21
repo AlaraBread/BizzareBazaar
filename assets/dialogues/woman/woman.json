@@ -53,7 +53,7 @@
 										}},
 										{"display":"[2] \"Wow, you fool.\"", "input":"2", "dialogue":{
 											"type":"dialogue",
-											"prompt":":(",
+											"prompt":";~;",
 											"options":[
 												{"display":"Press enter", "input":"*", "dialogue":{
 													"type":"return", "levels":4
@@ -75,7 +75,7 @@
 							"options":[
 								{"display":"[1] \"Sure thing.\"","input":"1","dialogue":{
 									"type":"dialogue",
-									"prompt":"You have traded your FLOWERS for some delicate-smelling PERFUME. Oooh, feminine~",
+									"prompt":"You have traded your FLOWERS for some delicate-smelling PERFUME. Oooh, feminine!",
 									"item":"PERFUME",
 									"options":[
 										{"display":"Press enter", "input":"*", "dialogue":{
@@ -130,7 +130,7 @@
 						}}
 					]
 				}},
-				{"display":"[5] \"Nothing much, just leaving.\" [LEAVE]", "input":"5", "dialogue":{
+				{"display":"[4] \"Nothing much, just leaving.\" [LEAVE]", "input":"4", "dialogue":{
 					"type":"swap", "to":"stalls"
 				}}
 			]

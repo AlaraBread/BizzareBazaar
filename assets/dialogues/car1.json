@@ -7,13 +7,27 @@
 				{"display":"[1] Examine the Car.", "input":"1", "dialogue":{"type":"if","options":[
 					{"item":"","dialogue":{
 					"type":"dialogue",
-					"prompt":"Feeling scammed, you decide to assess the damage of your hasty decision. Upon inspecting the car, you realize just what is wrong with it. It is missing an instrumental component: the SYSTOLIC MOTIVATOR. What is it? Beyond you, but it’s clearly important.\nYou scour the vehicle for any item of use. There are some pencils and a used tissue in the glove compartment and mysterious stains in the backseat, but the only thing of value is a pair of FUZZY DICE hanging from the rearview mirror.",
-					"item":"FUZZY DICE",
+					"prompt":"Feeling scammed, you decide to assess the damage of your hasty decision. Upon inspecting the car, you realize just what is wrong with it. It is missing an instrumental component: the SYSTOLIC MOTIVATOR. What is it? Beyond you, but it’s clearly important.\n",
 					"options":[
-						{"display":"Press enter.","input":"*","dialogue":{
-							"type":"return",
-							"levels":2
-						}}
+						{
+							"display": "Press enter.",
+							"input": "*",
+							"dialogue": {
+								"type": "dialogue",
+								"prompt": "You scour the vehicle for any item of use. There are some pencils and a used tissue in the glove compartment and mysterious stains in the backseat, but the only thing of value is a pair of FUZZY DICE hanging from the rearview mirror.",
+								"item": "FUZZY DICE",
+								"options": [
+									{
+										"display": "Press enter.",
+										"input": "*",
+										"dialogue": {
+											"type": "return",
+											"levels": 3
+										}
+									}
+								]
+							}
+						}
 					]
 					}},
 					{"item":"*", "dialogue":{

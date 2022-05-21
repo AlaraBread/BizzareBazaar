@@ -4,9 +4,9 @@
 	"music":3,
 	"art":"grandma",
 	"options":[
-		{"display":"[1] \"that does look good...\"", "input":"1", "dialogue":{
+		{"display":"[1] \"That does look good...\"", "input":"1", "dialogue":{
 			"type":"dialogue",
-			"prompt":"Oh, but first, show me what you have brought.",
+			"prompt":"\"Oh, but first, show me what you have brought.\"",
 			"options":[
 				{"display":"[1] \"I don’t think I have anything you’d like...\"", "input":"1", "dialogue":{
 					"type":"if",
@@ -38,7 +38,7 @@
 			"type":"dialogue",
 			"prompt":"\"Don’t lie to me, you want some.\"",
 			"options":[
-				{"display":"[1] \"It seems that the only way to escape soup is to leave.\"", "input":"1", "dialogue":{
+				{"display":"[1] It seems that the only way to escape soup is to leave. [LEAVE]", "input":"1", "dialogue":{
 					"type":"swap", "to":"stalls"
 				}}
 			]

@@ -2,7 +2,7 @@
 	"type": "dialogue",
 	"music": 3,
 	"art":"grandma",
-	"prompt": "You saunter over to the first stall.\nThe table can hardly be seen over the masses of baked goods and homemade preserves. As your eyes scan the table, taking in the assortment of pies, soups, jams, jellies, pickles, and Slavic foods you cannot even recognize. You take in a whiff. They’re fresh. Your stomach growls.",
+	"prompt": "You saunter over to the first stall.\nThe table can hardly be seen over the masses of baked goods and homemade preserves. As your eyes scan the table, taking in the assortment of pies, soups, jams, jellies, pickles, and Slavic foods you cannot even recognize, you take in a whiff. They’re fresh. Your stomach growls.",
 	"options": [{
 		"display": "Press enter",
 		"input": "*",
