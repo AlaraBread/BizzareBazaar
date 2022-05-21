@@ -19,3 +19,6 @@ func play(s):
 		return
 	$MusicPlayer.stream = music[s]
 	$MusicPlayer.play()
+
+func volume(v:float):
+	$MusicPlayer.volume_db = linear2db(v)

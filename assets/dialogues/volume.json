@@ -1,0 +1,26 @@
+{
+	"type":"dialogue",
+	"art":"main_menu",
+	"prompt":"Volume Adjustment.",
+	"music":1,
+	"options":[
+		{"display":"[1] Volume Off.", "input":"1", "dialogue":
+			{"type":"return","levels":1, "volume":0}
+		},
+		{"display":"[2] Volume Low.", "input":"2", "dialogue":
+			{"type":"return","levels":1, "volume":0.1}
+		},
+		{"display":"[3] Volume Med.", "input":"3", "dialogue":
+			{"type":"return","levels":1, "volume":0.316228}
+		},
+		{"display":"[4] Volume High.", "input":"4", "dialogue":
+			{"type":"return","levels":1, "volume":0.5}
+		},
+		{"display":"[5] Volume \"Ear Blasting\".", "input":"5", "dialogue":
+			{"type":"return","levels":1, "volume":1}
+		},
+		{"display":"[6] Back to main menu.", "input":"6", "dialogue":
+			{"type":"swap","to":"main_menu"}
+		}
+	]
+}

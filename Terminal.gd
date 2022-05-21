@@ -44,6 +44,8 @@ func set_dialogue(d:Dictionary):
 	if(d.has("item")):
 		$Inventory.text = "Inventory\n"+d["item"]
 		inventory = d["item"]
+	if(d.has("volume")):
+		MusicManager.volume(d["volume"]) # default 0.316228
 	match d["type"]:
 		"dialogue":
 			prev = [d]+prev

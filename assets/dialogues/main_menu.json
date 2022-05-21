@@ -4,7 +4,10 @@
 	"prompt":"Press enter to start.",
 	"music":1,
 	"options":[
-		{"display":"", "input":"*", "dialogue":
+		{"display":"[1] Adjust volume.", "input":"1", "dialogue":
+			{"type":"swap","to":"volume"}
+		},
+		{"display":"[2] Start game.", "input":"2", "dialogue":
 			{"type":"swap","to":"intro"}
 		}
 	]
