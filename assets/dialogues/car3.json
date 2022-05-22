@@ -32,7 +32,7 @@
 									"music":0,
 									"prompt":"\"Damn, you love bluffing, don’t you?\"",
 									"options":[
-										{"display":"[1] \"It’s no bluff. You’re not as hot as you think you are. A little birdie told me that you failed to scam the most gullible girl that walked by here. Some scammer you are.\"", "dialogue":{
+										{"display":"[1] \"It’s no bluff. You’re not as hot as you think you are. A little birdie told me that you failed to scam the most gullible girl that walked by here. Some scammer you are.\"", "input":"1", "dialogue":{
 											"type":"if",
 											"options":[
 												{"item":"SCAM BOOK", "dialogue":{

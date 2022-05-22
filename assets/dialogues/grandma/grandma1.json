@@ -199,8 +199,8 @@
 									"display": "Press enter",
 									"input": "*",
 									"dialogue": {
-										"type": "return",
-										"levels": 2
+										"type": "swap",
+										"to": "stalls"
 									}
 								}
 							]

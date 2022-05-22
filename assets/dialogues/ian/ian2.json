@@ -39,7 +39,7 @@
 				}},
 				{"display":"[2] \"Hey man, that’s fair.\"","input":"2","dialogue":{
 					"type":"dialogue",
-					"prompt":"\"Ian nods in respect, but before long his stomach’s growls can be heard once more.\"",
+					"prompt":"Ian nods in respect, but before long his stomach’s growls can be heard once more.",
 					"options":[
 					{"display":"[1] \"Sounds like you’re real hungry though.\"", "input":"1","dialogue":{
 						"type":"dialogue",
