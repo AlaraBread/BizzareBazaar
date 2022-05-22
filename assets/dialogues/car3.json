@@ -27,7 +27,7 @@
 								{"display":"[1] \"Damn you!\" [LEAVE]", "input":"1", "dialogue":{
 									"type":"swap","to":"stalls"
 								}},
-								{"display":"[2] \"Sure, that’s what you think. But I’m the better scammer, and I know it.\"", "input":"2", "dialouge":{
+								{"display":"[2] \"Sure, that’s what you think. But I’m the better scammer, and I know it.\"", "input":"2", "dialogue":{
 									"type":"dialogue",
 									"music":0,
 									"prompt":"\"Damn, you love bluffing, don’t you?\"",
