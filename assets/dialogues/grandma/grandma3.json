@@ -8,7 +8,7 @@
 			"type":"dialogue",
 			"prompt":"\"Oh, but first, show me what you have brought.\"",
 			"options":[
-				{"display":"[1] \"I don’t think I have anything you’d like...\"", "input":"1", "dialogue":{
+				{"display":"[1] \"I don’t think I have anything you’d like...\" [Show ITEM]", "input":"1", "dialogue":{
 					"type":"if",
 					"options":[
 						{"item":"NESTING DOLLS", "dialogue":{

@@ -36,7 +36,7 @@
 							"options":[
 								{"display":"[1] \"Okay\"", "input":"1", "dialogue":{
 									"type":"return", "levels":3
-								}},
+								}}
 							]
 						}}
 					]

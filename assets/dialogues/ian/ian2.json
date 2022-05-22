@@ -5,7 +5,17 @@
 	"options":[
 	{"flag":"*", "dialogue":{
 		"type":"dialogue",
-		"prompt":[{"flag":"ian_sweater_met","prompt":"Anything else?"},{"flag":"*","prompt":"You return to the second stall.\nThe Canterburian and his heaping piles of junk are still there, but now the fellow is wearing the sweater you gave him.\nThe faint whirring of a Hammond organ can still be heard, but is occasionally pierced by the growl of someone’s stomach.\n\n\"Oy, mate, thanks for the sweater.\""}],
+		"prompt": [
+			{
+				"flag": "ian_sweater_met",
+				"prompt": "Anything else?"
+			},
+
+			{
+				"flag": "*",
+				"prompt": "You return to the second stall.\nThe junk and its Canterburian owner, now sporting his new sweater, are still there.\nThe faint whirring of a Hammond organ can still be heard, but is occasionally pierced by the growl of someone’s stomach.\n\"Oy, mate, thanks for the sweater.\""
+			}
+		],
 		"art":"ian",
 		"flag":"ian_sweater_met",
 		"options":[
@@ -14,7 +24,7 @@
 			"type":"dialogue",
 			"prompt":"\"Indeed I do, Indeed I do.\"",
 			"options":[
-			{"display":"[1] \"You know, I got more goods from grandmama...\" [show ITEM]","input":"1","dialogue":{
+			{"display":"[1] \"You know, I got more goods from grandmama...\" [Show WARM SOUP]","input":"1","dialogue":{
 				"type":"dialogue",
 				"prompt":"\"That does look good, but… I shouldn’t be spending more money.\"",
 				"options":[
@@ -23,7 +33,7 @@
 					"prompt":"\"Well, it ain’t the first night I’ve been hungry.\"",
 					"options":[
 					{"display":"[1] \"Your loss, then.\"", "input":"1","dialogue":{
-						"type":"return","levels":3
+						"type":"return","levels":4
 					}}
 					]
 				}},
@@ -42,7 +52,7 @@
 							"options":[
 								{
 									"display": "[1] \"Thanks.\"", "input":"1", "dialogue":{
-								"type":"return", "levels":6
+								"type":"return", "levels":7
 							}}
 							]
 						}}
@@ -60,7 +70,7 @@
 				"prompt":"\"Indeed I do, Indeed I do.\"",
 				"options":[
 				{"display":"[1] \"Cool.\"", "input":"1", "dialogue":{
-					"type":"return", "levels":2
+					"type":"return", "levels":3
 				}}
 				]
 			}}

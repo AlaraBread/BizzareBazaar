@@ -11,7 +11,7 @@
 				"type": "dialogue",
 				"prompt": "\"Oh ho ho ho ho ho, yes yes yes yes, you have come to offer me something, no?\"",
 				"options": [{
-						"display": "[1] \"Yes, I have.\"",
+						"display": "[1] \"Yes, I have.\" [Show ITEM]",
 						"input": "1",
 						"dialogue": {
 							"type": "if",

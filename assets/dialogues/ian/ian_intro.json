@@ -10,11 +10,28 @@
 			"options":[
 			{"display":"Press enter.", "input":"*","dialogue":{
 				"type":"dialogue",
-				"prompt":"Your gaze goes up to the young Englishman manning the table. His long brown locks drape over a vest likely louder than any instrument he could play. The sharp points of his boots peek out from under the colossal flare of his bell bottoms. Outside of the 70s, the only place this eccentric figure would have fit in was this very market. As he greets you, you notice his accent. Canterbury?\nThe faint hum of Hammond organ can be heard whirring in the background.",
-				"options":[
-				{"display":"Press enter.", "input":"*","dialogue":{
-					"type":"swap","to":"ian/ian1"
-				}}
+				"prompt":"Your gaze goes up to the young Englishman manning the table. His long brown locks drape over a vest likely louder than any instrument he could play. The sharp points of his boots peek out from under the colossal flare of his bell bottoms.",
+				"options": [
+					{
+						"display": "Press enter.",
+						"input": "*",
+						"dialogue": {
+							"type": "dialogue",
+							"prompt": "Outside of the 70s, the only place this eccentric figure would have fit in was this very market. As he greets you, you notice his accent. Canterbury?\nThe faint hum of Hammond organ can be heard whirring in the background.",
+							"options": [
+								{
+									"display": "Press enter.",
+									"input": "*",
+									"dialogue": {
+										"type": "swap",
+										"to": "ian/ian1"
+									}
+								}
+
+							]
+						}
+					}
+					
 				]
 			}}
 			]
